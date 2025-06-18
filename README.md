@@ -45,22 +45,7 @@ backend:
     npm install
     node index.js
 3. JSON File:
-[
-  {
-    "id": 1,
-    "name": "ChatGPT",
-    "category": "Chatbot",
-    "description": "Conversational AI developed by OpenAI.",
-    "url": "https://chat.openai.com/"
-  },
-  {
-    "id": 2,
-    "name": "Midjourney",
-    "category": "Image Generation",
-    "description": "AI art generator using text prompts.",
-    "url": "https://www.midjourney.com/"
-  }
-]
+[{"id":1,"name":"ChatGPT","category":"Writing","url":"https://chat.openai.com","excerpt":"Advanced conversational AI for content creation, research, and brainstorming.","tags":["AI Assistant","Chatbot","Content Generation"],"pricing":"Freemium"},{"id":2,"name":"Midjourney","category":"Image Generation","url":"https://www.midjourney.com","excerpt":"Generate high-quality images from text prompts.","tags":["Art","Image","AI"],"pricing":"Paid"},{"id":3,"name":"Notion AI","category":"Productivity","url":"https://www.notion.so/product/ai","excerpt":"Your second brain for writing, brainstorming, and editing inside Notion.","tags":["Writing","Notes","Workspace"],"pricing":"Freemium"},{"id":4,"name":"Runway ML","category":"Video","url":"https://runwayml.com","excerpt":"Creative AI tools for video editing and content generation.","tags":["Video Editing","ML","Creative Tools"],"pricing":"Freemium"},{"id":5,"name":"Copy.ai","category":"Marketing","url":"https://www.copy.ai","excerpt":"AI writing assistant for marketing copy, emails, and ads.","tags":["Marketing","Copywriting","Content"],"pricing":"Freemium"}]
 
 4. Set-up the frontend:
 cd ../client
