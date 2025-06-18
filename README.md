@@ -28,22 +28,28 @@ Data
 
 JSON-based storage (can be upgraded to database later)
 
+
 🚀 **Getting Started**
+
 Prerequisites
 Node.js (v14 or higher)
 npm (v6 or higher)
 
+
 **Installation**
+
 Clone the repository:
 git clone https://github.com/casey1308/ai-tool-explorer.git
 cd ai-tool-explorer
 
 **Setup the backend:**
+
 cd server
 npm install
 node index.js
 
 **Prepare JSON data**
+
 Create a file tools.json inside the server folder with the following content:
 [
   {
@@ -94,6 +100,7 @@ Create a file tools.json inside the server folder with the following content:
 ]
 
 **Setup the frontend**
+
 Open a new terminal and run:
 cd ../client
 npm install
@@ -101,6 +108,7 @@ npm start
 The frontend will be available at: http://localhost:3000
 
 🗂 **File Structure**
+
 ai-tool-explorer/
 ├── client/               # React frontend
 │   ├── public/
@@ -127,6 +135,7 @@ ai-tool-explorer/
 
 
 🛣 **Roadmap**
+
 ✅ Build clean frontend & backend setup
 ⏳ Add confetti animation on favoriting
 ⏳ Add category-wise bar chart visualization
@@ -134,8 +143,10 @@ ai-tool-explorer/
 ⏳ Optional: Move to file or database-based persistence
 
 🛡 **License**
+
 This project is licensed under the MIT License.
 
 👨‍💻 **Author**
+
 Developed with ❤️ by @casey1308
 
