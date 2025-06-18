@@ -110,9 +110,11 @@ The frontend will be available at: http://localhost:3000
 🗂 **File Structure**
 
 ai-tool-explorer/
-├── client/               # React frontend
+├── client/       # React frontend
 │   ├── public/
+
 │   ├── src/
+
 │   │   ├── components/
 │   │   │   ├── ToolCard.js
 │   │   │   ├── CategoryChart.js
