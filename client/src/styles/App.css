@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+:root {
+  --bg: #ffffff;
+  --text: #111111;
+}
+
+body.dark {
+  --bg: #121212;
+  --text: #eeeeee;
+}
+
+input {
+  padding: 10px;
+  margin: 1rem;
+  width: 300px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
