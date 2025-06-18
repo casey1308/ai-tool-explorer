@@ -61,6 +61,7 @@ Create a file tools.json inside the server folder with the following content:
     "tags": ["AI Assistant", "Chatbot", "Content Generation"],
     "pricing": "Freemium"
   },
+  
   {
     "id": 2,
     "name": "Midjourney",
@@ -70,6 +71,7 @@ Create a file tools.json inside the server folder with the following content:
     "tags": ["Art", "Image", "AI"],
     "pricing": "Paid"
   },
+  
   {
     "id": 3,
     "name": "Notion AI",
@@ -79,6 +81,7 @@ Create a file tools.json inside the server folder with the following content:
     "tags": ["Writing", "Notes", "Workspace"],
     "pricing": "Freemium"
   },
+  
   {
     "id": 4,
     "name": "Runway ML",
@@ -88,6 +91,7 @@ Create a file tools.json inside the server folder with the following content:
     "tags": ["Video Editing", "ML", "Creative Tools"],
     "pricing": "Freemium"
   },
+  
   {
     "id": 5,
     "name": "Copy.ai",
@@ -98,6 +102,7 @@ Create a file tools.json inside the server folder with the following content:
     "pricing": "Freemium"
   }
 ]
+
 
 **Setup the frontend**
 
@@ -112,9 +117,7 @@ The frontend will be available at: http://localhost:3000
 ai-tool-explorer/
 ├── client/       # React frontend
 │   ├── public/
-
 │   ├── src/
-
 │   │   ├── components/
 │   │   │   ├── ToolCard.js
 │   │   │   ├── CategoryChart.js
