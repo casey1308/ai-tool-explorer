@@ -1,7 +1,9 @@
 🚀 **AI Tool Explorer**
+
 AI Tool Explorer is a full-stack web application that lets users discover, favorite, and explore trending AI tools. It features a clean, responsive UI with theme customization and smooth animations.
 
 🌟 **Features**
+
 Browse AI Tools: Discover tools displayed in a responsive grid layout
 Favorites System: Save and manage your preferred tools with backend sync
 Theme Toggle: Switch seamlessly between light and dark modes
@@ -9,6 +11,7 @@ Modern UI: Built using styled-components for a sleek design
 Interactive Elements: Confetti animations and smooth transitions
 
 🛠 **Tech Stack**
+
 Frontend
 React.js
 Styled-components
@@ -16,11 +19,13 @@ Axios (HTTP client)
 React Router (Navigation)
 
 Backend
+
 Node.js
 Express.js
 RESTful API architecture
 
 Data
+
 JSON-based storage (can be upgraded to database later)
 
 🚀 **Getting Started**
