@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import ToolCard from '../components/ToolCard';
+import CategoryChart from './CategoryChart';  // Corrected path
+import { triggerConfetti } from '../components/confetti';  // Only import the correct confetti function
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
@@ -58,24 +60,26 @@ const AllTools = () => {
     fetchData();
   }, []);
 
-  const handleToggleFavorite = async (tool) => {
-    const isFav = favorites.some(fav => fav.id === tool.id);
-    if (isFav) {
-      try {
-        await axios.delete(`http://localhost:5000/api/favorites/${tool.id}`);
-        setFavorites(prev => prev.filter(f => f.id !== tool.id));
-      } catch {
-        alert('Failed to remove from favorites');
-      }
-    } else {
-      try {
-        await axios.post('http://localhost:5000/api/favorites', tool);
-        setFavorites(prev => [...prev, tool]);
-      } catch {
-        alert('Failed to add to favorites');
-      }
+const handleToggleFavorite = async (tool) => {
+  const isFav = favorites.some(fav => fav.id === tool.id);
+  if (isFav) {
+    try {
+      await axios.delete(`http://localhost:5000/api/favorites/${tool.id}`);
+      setFavorites(prev => prev.filter(f => f.id !== tool.id));
+    } catch {
+      alert('Failed to remove from favorites');
     }
-  };
+  } else {
+    try {
+      await axios.post('http://localhost:5000/api/favorites', tool);
+      setFavorites(prev => [...prev, tool]);
+      triggerConfetti();  // Use triggerConfetti here
+    } catch {
+      alert('Failed to add to favorites');
+    }
+  }
+};
+
 
   if (loading) return <Wrapper>Loading...</Wrapper>;
   if (!tools.length) return <Wrapper>No tools found.</Wrapper>;
@@ -94,6 +98,9 @@ const AllTools = () => {
           />
         ))}
       </Grid>
+
+      {/* Show category chart below the grid */}
+      <CategoryChart tools={tools} />
     </Wrapper>
   );
 };
